@@ -1,0 +1,20 @@
+#Bubble
+L= []
+n=int(input("Enter number of Elements:"))
+
+print("Enter the Elements of List: ")
+
+for item in range(n):
+    a = int(input(" "))
+    L.append(a)
+    
+    print("List is:",L)
+    
+for i in range(len(L)):
+    for j in range (0,(len(L)-1)-i):  
+        if (L[j]>L[j+1]):  
+            temp=L[j]  
+            L[j]=L[j+1]  
+            L[j+1]=temp  
+            
+print("Sorted List is",L)
